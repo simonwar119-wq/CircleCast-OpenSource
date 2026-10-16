@@ -1,0 +1,61 @@
+# Build output and local tools
+.build/
+.swiftpm/
+dist/
+DerivedData/
+*.app/
+*.dSYM/
+*.xcarchive/
+*.xcresult/
+*.ipa
+*.dmg
+*.pkg
+*.zip
+*.tar.gz
+
+# Generated artwork (reproducible from scripts/make-icon.swift)
+Resources/AppIcon.icns
+Resources/AppIcon.iconset/
+
+# Tests, recordings, logs, and personal drafts
+TestArtifacts/
+Recordings/
+recordings/
+*.mp4
+*.mov
+*.m4v
+*.m4a
+*.wav
+*.aiff
+*.log
+*.trace
+*.crash
+*.ips
+*.sqlite*
+*.db
+*.rtf
+*.pages
+
+# Credentials and signing material
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.keychain*
+AuthKey_*.p8
+secrets/
+credentials/
+
+# Per-user editor and macOS state
+.DS_Store
+.AppleDouble
+._*
+*.xcuserstate
+xcuserdata/
+.idea/
+.vscode/
