@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleName</key><string>头像录屏</string>
+<key>CFBundleDisplayName</key><string>头像录屏</string>
+<key>CFBundleIdentifier</key><string>local.circlecast.recorder</string>
+<key>CFBundleExecutable</key><string>CircleCast</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>0.1.0</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>CFBundleIconFile</key><string>AppIcon</string>
+<key>LSMinimumSystemVersion</key><string>14.0</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSCameraUsageDescription</key><string>仅在你点击开始录制后，使用内置摄像头拍摄圆形头像并合成到本地视频。</string>
+<key>NSMicrophoneUsageDescription</key><string>仅在你点击开始录制后，录入你的讲话并保存到本地视频。</string>
+<key>NSScreenCaptureUsageDescription</key><string>录制你选择的屏幕操作，提词器和本应用窗口会被排除。</string>
+</dict></plist>
