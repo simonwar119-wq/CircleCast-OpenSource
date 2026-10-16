@@ -83,7 +83,9 @@ if args.history:
             if pattern.search(metadata):
                 findings.append((commit[:12], 'commit metadata', category))
         emails = git('show', '-s', '--format=%ae%n%ce', commit).decode().splitlines()
-        if any(not email.endswith('@users.noreply.github.com') for email in emails):
+        # GitHub signs web commits with its own public no-reply committer address.
+        if any(not (email.endswith('@users.noreply.github.com') or email == 'noreply@github.com')
+               for email in emails):
             findings.append((commit[:12], 'commit metadata', 'non-GitHub-noreply email: manual privacy review required'))
 
 if not seen:
