@@ -14,7 +14,7 @@
 2. 用已有 Xcode 打开 `Package.swift`；参照 README 的实测工具链。
 3. 保持改动范围明确，遵循已有 Swift / AppKit 风格。避免为了小功能引入庞大运行时、服务端依赖或用户不知情的网络行为。
 4. 根据行为变化补充有意义的测试。默认使用合成画面/音调；不要让自动测试获取摄像头、麦克风或屏幕录制权限。
-5. 执行 `./scripts/test.sh`、`./scripts/build.sh`，以及文档检查 `python3 scripts/check-doc-links.py`。
+5. 执行 `zsh scripts/test.sh`、`zsh scripts/build.sh`，以及文档检查 `python3 scripts/check-doc-links.py`。
 6. 检查待提交文件：`git diff --cached --stat`，然后运行 `python3 scripts/audit-publication.py`。
 7. 提交 Pull Request，写清问题、修改后的行为、测试证据、未验证项和兼容性影响。
 
